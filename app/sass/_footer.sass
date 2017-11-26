@@ -1,0 +1,67 @@
+body > footer
+  background-color: #282828
+  padding-top: 62px
+  padding-bottom: 16px
+  font-weight: 300
+  color: white
+  a
+    color: white
+    &:hover
+      color: white
+  .footer-menu
+    display: table
+    width: 100%
+    a
+      display: table-cell
+      font-weight: 300
+  .footer-socials
+    font-size: 28px
+    line-height: 28px
+    a:hover
+      text-decoration: none
+      color: transparentize(white, 0.3)
+  .footer-address
+    margin-top: 36px
+    font-style: italic
+    margin-bottom: 36px
+  .policy-link
+    text-decoration: underline
+  .footer-rights
+    font-style: italic
+
+  .footer-contacts
+    text-align: right
+    .footer-contacts-item
+      margin-bottom: 11px
+      .footer-contacts-item-city
+        font-style: italic
+
+@media screen and (max-width: 1199px)
+  body > footer
+    .footer-menu
+      margin-bottom: 25px
+
+@media screen and (max-width: 767px)
+  body > footer
+    .footer-contacts
+      margin-top: 20px
+      text-align: left
+      .footer-contacts-item
+        display: inline-block
+        margin-right: 25px
+
+
+@media screen and (max-width: 500px)
+  body > footer
+    text-align: center
+    padding-top: 40px
+    .footer-menu
+      display: block
+      a
+        display: block
+        font-size: 20px
+        width: 100%
+        text-align: center
+    .footer-rights
+      display: block
+      margin-top: 20px

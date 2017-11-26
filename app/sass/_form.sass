@@ -1,0 +1,38 @@
+input, button, textarea, .white-popup input[type=submit]
+  width: 100%
+textarea
+  height: 236px
+input, textarea
+  margin: 10px 0
+  border-radius: 8px
+  border: 1px solid transparent
+  background-color: #fcf9f9
+  padding: 12px 19px 10px
+  font-size: 20px
+  &:focus
+    outline: none
+
+.form-group
+  font-size: 20px
+  position: relative
+  label
+    font-weight: 300
+    font-size: 18px
+    position: absolute
+    width: 80%
+    text-align: left
+    pointer-events: none
+    top: 24px
+    left: 27px
+    transition: all 0.3s
+    color: #7c7c7c
+  input:focus + label,
+  input.filled + label,
+  textarea:focus + label,
+  textarea.filled + label
+    top: 10px
+    left: 10px
+    font-size: 12px
+
+
+
