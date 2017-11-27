@@ -25,14 +25,16 @@ $(function() {
         items: {
             src: '#callbackPopup',
             type: 'inline'
-        }
+        },
+        fixedContentPos: false
     });
 
     $('.consult-request-btn').magnificPopup({
         items: {
             src: '#consultRequestPopup',
             type: 'inline'
-        }
+        },
+        fixedContentPos: false
     });
 
     $('[type=tel]').inputmask({
@@ -90,14 +92,23 @@ $(function() {
 
     $('.services-carousel').owlCarousel({
         items: 1,
+        autoplay: true,
+        loop: true,
         nav: true,
         dots: true,
-        dotsContainer: '.services-carousel-dots',
+        dotsContainer: '.mobile-dots',
         navContainer: '.services-carousel-nav',
-        navText: ['<i class="icon8 icon8-arrow-left"></i>', '<i class="icon8 icon8-arrow-right"></i>']
+        navText: ['<i class="icon8 icon8-arrow-left"></i>', '<i class="icon8 icon8-arrow-right"></i>'],
+        responsive: {
+            768: {
+                dotsContainer: '.desktop-dots'
+            }
+        }
     });
 
     $('.companies-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
         items: 1,
         nav: true,
         navText: ['<i class="icon8 icon8-arrow-left"></i>', '<i class="icon8 icon8-arrow-right"></i>'],
@@ -112,6 +123,32 @@ $(function() {
                 items: 4
             }
         }
-    })
+    });
+
+    $('.show-more-btn').click(function () {
+        $('#advantages .row .hidden').removeClass('hidden');
+    });
+
+    $('.show-video-btn').magnificPopup({
+        items: {
+            src: 'https://www.youtube.com/watch?v=9Xdi6KHoL28'
+        },
+        type: 'iframe',
+        iframe: {
+            markup: '<div class="mfp-iframe-scaler">'+
+            '<div class="mfp-close"></div>'+
+            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+            '</div>',
+            patterns: {
+                youtube: {
+                    index: 'youtube.com/',
+                    id: 'v=',
+                    src: '//www.youtube.com/embed/%id%?autoplay=1'
+                }
+            },
+            srcAction: 'iframe_src',
+        },
+        fixedContentPos: false
+    });
 
 });

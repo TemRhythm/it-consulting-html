@@ -47,9 +47,18 @@ body > header
         position: absolute
         top: 11px
         right: 22px
+      .logo
+        width: 72px
+        display: inline-block
+        vertical-align: middle
+      .menu-header-slogan
+        width: 133px
+        display: inline-block
+        vertical-align: middle
+        font-weight: 300
       .phone-selection-items
         margin-bottom: 13px
-        margin-top: 59px
+        margin-top: 50px
         a
           display: none
           font-size: 24px
@@ -61,9 +70,9 @@ body > header
       .phone-selection-links
         a
           font-style: italic
-          border-bottom: 1px dotted #ffffff
+          border-bottom: 0px dotted #ffffff
           &.active
-            border-bottom: 0
+            border-bottom-width: 1px
           &:hover, &:focus
             text-decoration: none
       .menu-items
@@ -102,8 +111,6 @@ body > header
           top: 13px
           cursor: pointer
           transition: transform .5s
-          &:focus
-            outline: 0
           i
             font-size: 30px
         &.open
