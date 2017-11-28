@@ -4,10 +4,14 @@
     display: block
     color: $text-color
     .post-category-inner
+      overflow: hidden
       height: 228px
-      background: no-repeat center
-      background-size: cover
       position: relative
+      .post-category-image
+        height: 228px
+        background: no-repeat center
+        background-size: cover
+        transition: transform .5s ease
       .post-category-name
         position: absolute
         width: 103px
@@ -19,6 +23,10 @@
         padding-top: 11px
         left: -7px
         top: -3px
+    &:hover
+      .post-category-inner
+        .post-category-image
+          transform: scale(1.1)
 
 @media screen and (max-width: 767px)
   #posts

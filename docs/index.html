@@ -38,7 +38,7 @@
 			</div>
 			<button class="icon-btn header-menu-btn"><i class="icon8 icons8-menu"></i></button>
 		</div>
-		<nav id="mainMenu" class="menu">
+		<nav id="mainMenu" class="menu menu-open">
 			<div class="menu-inner">
 				<button class="icon-btn menu-close-btn"><i class="icons8 icons8-enlarge"></i></button>
 				<div class="menu-header">
@@ -53,26 +53,38 @@
 						<a href="#moscowPhone">Москва</a>
 					</div>
 				</div>
-				<ul class="menu-items">
-					<li><a href="/"><i class="icons8 icons8-brain"></i> Услуги</a></li>
-					<li class="drop-down open"><a href="#"><i class="icons8 icons8-idea"></i> Решения</a>
-						<button class="icon-btn expand-collapse-btn"><i class="icons8-expand-arrow"></i></button>
-						<ul>
-							<li><a href="#">Малому бизнесу</a></li>
-							<li><a href="#">Крупному бизнесу</a></li>
-							<li><a href="#">Бюджетным организациям</a></li>
-							<li><a href="#">Отраслевые решения</a></li>
-							<li><a href="#">Сервисы</a></li>
-							<li><a href="#">Продукты других вендоров</a></li>
-							<li><a href="#">Торговое оборудование</a></li>
-						</ul>
-					</li>
-					<li><a href="#"><i class="icons8 icons8-business"></i> Кейсы</a></li>
-					<li><a href="#"><i class="icons8 icons8-ruble"></i> Цены и акции</a></li>
-					<li><a href="#"><i class="icons8 icons8-people"></i> О нас</a></li>
-					<li><a href="#"><i class="icons8 icons8-message"></i> Контакты</a></li>
-				</ul>
-				<button class="btn white-btn transparent-btn callback-btn">Обратный звонок</button>
+				<div class="menu-scroll-part">
+					<ul class="menu-items">
+						<li class="drop-down"><a href="/"><i class="icons8 icons8-brain"></i> Услуги</a>
+							<button class="icon-btn expand-collapse-btn"><i class="icons8-expand-arrow"></i></button>
+							<ul style="display: none">
+								<li><a href="#">Сопровождение и обновление 1С (ИТС)</a></li>
+								<li><a href="#">Аудит программ 1С</a></li>
+								<li><a href="#">IP телефония</a></li>
+							</ul>
+						</li>
+						<li class="drop-down"><a href="#"><i class="icons8 icons8-idea"></i> Решения</a>
+							<button class="icon-btn expand-collapse-btn"><i class="icons8-expand-arrow"></i></button>
+							<ul style="display: none">
+								<li><a href="#">Малому бизнесу</a></li>
+								<li><a href="#">Крупному бизнесу</a></li>
+								<li><a href="#">Бюджетным организациям</a></li>
+								<li><a href="#">Отраслевые решения</a></li>
+								<li><a href="#">Сервисы</a></li>
+								<li><a href="#">Продукты других вендоров</a></li>
+								<li><a href="#">Торговое оборудование</a></li>
+							</ul>
+						</li>
+						<li><a href="#"><i class="icons8 icons8-business"></i> Кейсы</a></li>
+						<li><a href="#"><i class="icons8 icons8-ruble"></i> Цены и акции</a></li>
+						<li><a href="#"><i class="icons8 icons8-people"></i> О нас</a></li>
+						<li><a href="#"><i class="icons8 icons8-message"></i> Контакты</a></li>
+					</ul>
+					<button class="btn white-btn transparent-btn callback-btn">Обратный звонок</button>
+					<a href="#" class="menu-mail-link">Напишите нам</a>
+					<div class="menu-address">г. Ярославль, ул. Советская, 69, к.2, 1 этаж</div>
+					<a href="#" class="menu-privacy-link">Политика конфиденциальности</a>
+				</div>
 			</div>
 		</nav>
 	</header>
@@ -278,7 +290,7 @@
 				<div class="col-xs-12 col-sm-6 col-md-3">
 					<a href="#" class="about-personal">
 						<div class="image-wrapper">
-							<div class="about-personal-inner"></div>
+							<div class="about-personal-inner bg-black"></div>
 							<div class="image-bottom-wrapper">
 								<img src="img/personal/personal-2.png" alt="personal-2">
 							</div>
@@ -336,7 +348,7 @@
 				<div class="col-xs-12 col-sm-6 col-md-3">
 					<a href="#" class="about-personal">
 						<div class="image-wrapper">
-							<div class="about-personal-inner"></div>
+							<div class="about-personal-inner bg-black"></div>
 							<div class="image-bottom-wrapper">
 								<img src="img/personal/personal-4.png" alt="personal-4">
 							</div>
@@ -389,7 +401,8 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-4">
 					<a href="#" class="post-category">
-						<div class="post-category-inner" style="background-image: url(img/post-categories/category-image-1.jpg);">
+						<div class="post-category-inner">
+							<div class="post-category-image" style="background-image: url(img/post-categories/category-image-1.jpg);"></div>
 							<div class="post-category-name">Новости</div>
 						</div>
 						<div class="last-post-title">Константин Дзядуков, Олег Руденко и Анастасия Терёхина приглашают на...</div>
@@ -398,6 +411,7 @@
 				<div class="col-xs-12 col-sm-4">
 					<a href="#" class="post-category">
 						<div class="post-category-inner" style="background-image: url(img/post-categories/category-image-2.jpg);">
+							<div class="post-category-image"  style="background-image: url(img/post-categories/category-image-2.jpg);"></div>
 							<div class="post-category-name">Полезное</div>
 						</div>
 						<div class="last-post-title">Практическое использование информационной системы 1С: ИТС</div>
@@ -405,7 +419,8 @@
 				</div>
 				<div class="col-xs-12 col-sm-4">
 					<a href="#" class="post-category">
-						<div class="post-category-inner" style="background-image: url(img/post-categories/category-image-3.jpg);">
+						<div class="post-category-inner">
+							<div class="post-category-image"  style="background-image: url(img/post-categories/category-image-3.jpg);"></div>
 							<div class="post-category-name">Блог</div>
 						</div>
 						<div class="last-post-title">Зачем бизнесу ERP?</div>
@@ -468,6 +483,7 @@
 			</div>
 		</div>
 	</footer>
+	<botton class="icon-btn scroll-up-btn"></botton>
 	<div id="callbackPopup" class="white-popup mfp-hide">
 		<div class="popup-header">Обратный звонок</div>
 		<form action="#" id="callbackForm">

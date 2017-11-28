@@ -7,12 +7,10 @@ body > footer
   a
     color: white
     &:hover
-      color: white
+      color: transparentize(white, 0.3)
   .footer-menu
-    display: table
-    width: 100%
     a
-      display: table-cell
+      margin-right: 50px
       font-weight: 300
   .footer-socials
     font-size: 28px
@@ -40,6 +38,14 @@ body > footer
   body > footer
     .footer-menu
       margin-bottom: 25px
+      a
+        margin-right: 40px
+
+@media screen and (max-width: 991px)
+  body > footer
+    .footer-menu
+      a
+        margin-right: 17px
 
 @media screen and (max-width: 767px)
   body > footer

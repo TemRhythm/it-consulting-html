@@ -4,7 +4,7 @@ body > header
   background: #0d1823 url(../img/header-bg.jpg) no-repeat center
   background-size: cover
   .container
-    padding-top: 129px
+    padding-top: 43px
     position: relative
     height: $header-height
   .header-menu-btn
@@ -70,14 +70,14 @@ body > header
       .phone-selection-links
         a
           font-style: italic
-          border-bottom: 0px dotted #ffffff
+          border-bottom: 0 dashed #ffffff
+          margin-right: 15px
+          font-weight: 700
           &.active
             border-bottom-width: 1px
           &:hover, &:focus
             text-decoration: none
       .menu-items
-        overflow-y: auto
-        height: 520px
         padding: 0
         font-size: 22px
         a
@@ -96,7 +96,7 @@ body > header
             li
               padding: 0
               font-size: 18px
-              line-height: 18px
+              line-height: 25px
               margin-bottom: 19px
       .drop-down
         position: relative
@@ -119,6 +119,28 @@ body > header
           border: 1px solid white
           button
            transform: rotate(180deg)
+      .menu-mail-link, .menu-privacy-link
+        display: inline-block
+        margin: 20px 0 15px
+        line-height: 18px
+        border-bottom: 1px dashed #ffffff
+        &:hover, &:focus
+          text-decoration: none
+      .menu-scroll-part
+        overflow-y: auto
+        height: 600px
+
+.scroll-up-btn
+  position: fixed
+  bottom: 50px
+  right: 50px
+  width: 70px
+  height: 70px
+  border-radius: 50%
+  color: white
+  background-color: $accent
+  cursor: pointer
+
 @media screen and (max-width: 1199px)
   $header-height: 600px
   body > header
@@ -139,6 +161,7 @@ body > header
   body > header
     .container
       height: $header-height
+      padding-top: 120px
       .header-menu-btn
         top: 25px
         right: 25px

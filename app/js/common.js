@@ -151,4 +151,22 @@ $(function() {
         fixedContentPos: false
     });
 
+    var $scrollUpBtnEl = $('.scroll-up-btn');
+
+    $scrollUpBtnEl.click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000)
+    });
+
+    $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        console.log(y);
+        if (y > 800) {
+            $scrollUpBtnEl.show();
+        } else {
+            $scrollUpBtnEl.hide();
+        }
+    });
+
 });
