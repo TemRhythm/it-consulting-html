@@ -14,6 +14,11 @@ $(function() {
     });
 
     $('.drop-down .expand-collapse-btn').click(function () {
+        $(this).closest('.menu-items').find('.drop-down.open').find('ul').slideToggle({
+            start: function () {
+                $(this).closest('.menu-items').find('.drop-down.open').toggleClass('open');
+            }
+        });
         $(this).closest('.drop-down').find('ul').slideToggle({
             start: function () {
                 $(this).closest('.drop-down').toggleClass('open');
@@ -126,7 +131,8 @@ $(function() {
     });
 
     $('.show-more-btn').click(function () {
-        $('#advantages .row .hidden').removeClass('hidden');
+        $('#advantages').find('.row .hidden').removeClass('hidden');
+        $(this).fadeTo(500, 0);
     });
 
     $('.show-video-btn').magnificPopup({
@@ -146,7 +152,7 @@ $(function() {
                     src: '//www.youtube.com/embed/%id%?autoplay=1'
                 }
             },
-            srcAction: 'iframe_src',
+            srcAction: 'iframe_src'
         },
         fixedContentPos: false
     });
