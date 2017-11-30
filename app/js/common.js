@@ -14,11 +14,12 @@ $(function() {
     });
 
     $('.drop-down .expand-collapse-btn').click(function () {
-        $(this).closest('.menu-items').find('.drop-down.open').find('ul').slideToggle({
-            start: function () {
-                $(this).closest('.menu-items').find('.drop-down.open').toggleClass('open');
-            }
-        });
+        if(!$(this).closest('.drop-down').hasClass('open'))
+            $(this).closest('.menu-items').find('.drop-down.open').find('ul').slideToggle({
+                start: function () {
+                    $(this).closest('.menu-items').find('.drop-down.open').toggleClass('open');
+                }
+            });
         $(this).closest('.drop-down').find('ul').slideToggle({
             start: function () {
                 $(this).closest('.drop-down').toggleClass('open');
@@ -65,8 +66,7 @@ $(function() {
         return this.optional(element) || /\+7\(\d+\)\d{3}-\d{2}-\d{2}/.test(value);
     }, "Номер телефона не заполнен до конца");
 
-    //TODO: To plugin
-    $('form').validate({
+    var validateOptions = {
         rules: {
             'phone': {
                 required: true,
@@ -90,22 +90,27 @@ $(function() {
                         src: '#thankYouPopup'
                     }
                 });
-                }, 1000);
+            }, 1000);
             return false;
         }
-    });
+    }
+    //TODO: To plugin
+    $('#callbackForm').validate(validateOptions);
+    $('#requestForm').validate(validateOptions);
+    $('#consultRequestForm').validate(validateOptions);
+    $('#subscribeForm').validate(validateOptions);
 
     $('.services-carousel').owlCarousel({
         items: 1,
         autoplay: true,
         loop: true,
-        nav: true,
         dots: true,
         dotsContainer: '.mobile-dots',
         navContainer: '.services-carousel-nav',
-        navText: ['<i class="icon8 icon8-arrow-left"></i>', '<i class="icon8 icon8-arrow-right"></i>'],
+        navText: ['<i class="icons8 icons8-icon-4"></i>', '<i class="icons8 icons8-icon-3"></i>'],
         responsive: {
             768: {
+                nav: true,
                 dotsContainer: '.desktop-dots'
             }
         }
@@ -115,24 +120,25 @@ $(function() {
         loop: true,
         autoplay: true,
         items: 1,
-        nav: true,
-        navText: ['<i class="icon8 icon8-arrow-left"></i>', '<i class="icon8 icon8-arrow-right"></i>'],
+        navText: ['<i class="icons8 icons8-icon-4"></i>', '<i class="icons8 icons8-icon-3"></i>'],
         responsive: {
             450: {
                 items: 2
             },
             768: {
-                items: 3
+                items: 3,
+                nav: true
             },
             992: {
-                items: 4
+                items: 4,
+                nav: true
             }
         }
     });
 
     $('.show-more-btn').click(function () {
-        $('#advantages').find('.row .hidden').removeClass('hidden');
-        $(this).fadeTo(500, 0);
+        $('#advantages').find('.advantage-item').slideDown();
+        $(this).hide();
     });
 
     $('.show-video-btn').magnificPopup({
@@ -167,7 +173,6 @@ $(function() {
 
     $(document).scroll(function() {
         var y = $(this).scrollTop();
-        console.log(y);
         if (y > 800) {
             $scrollUpBtnEl.show();
         } else {

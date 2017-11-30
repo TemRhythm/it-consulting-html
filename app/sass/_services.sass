@@ -3,6 +3,8 @@ $services-bgc: #191818
   padding-bottom: 10px
   background-color: $services-bgc
   color: white
+  .container
+    position: relative
   .service-item-title
     font-size: 30px
     margin-bottom: 21px
@@ -10,6 +12,18 @@ $services-bgc: #191818
     font-weight: 300
   .service-item-price
     font-size: 78px
+  .service-item-details
+    display: inline-block
+    margin-top: 25px
+    color: white
+    i
+      transition: margin-left .3s
+      vertical-align: middle
+      line-height: 19px
+      font-size: 18px
+    &:hover
+      i
+        margin-left: 7px
   .services-carousel-dots
     display: block
     text-align: center
@@ -25,6 +39,23 @@ $services-bgc: #191818
         background-color: white
   .services-carousel-nav
     position: absolute
+    left: 0
+    right: 0
+    top: 42%
+    color: white
+    &.disabled
+      display: none
+    .owl-prev, .owl-next
+      position: absolute
+      width: 33px
+      height: 40px
+      i
+        font-size: 40px
+    .owl-prev
+      left: -30px
+    .owl-next
+      right: -30px
+
   .request-form-wrapper
     margin-top: 44px
     background-color: white
@@ -34,38 +65,13 @@ $services-bgc: #191818
     .request-form-title
       font-size: 30px
       font-weight: 700
-    input:not([type=submit])
-      background-color: transparent
-      padding-left: 0
-      padding-right: 0
-      border-radius: 0
-      border-bottom: 1px solid #c3c0c0
-      &.error
-        border-bottom-color: $accent
-    label
-        left: 0
-        font-size: 16px
-    input:focus + label,
-    input.filled + label,
-    textarea:focus + label,
-    textarea.filled + label
-      font-size: 12px
-    input[type=submit]
-      width: 100%
-      margin-top: 25px
-    small
-      font-size: 16px
-      color: #666666
-      font-style: italic
-      font-weight: 300
-      a
-        color: #666666
-        text-decoration: underline
 
 @media screen and (max-width: 991px)
   #services
     .request-form-wrapper
       margin-bottom: 70px
+    .services-carousel-nav
+      top: 22%
 @media screen and (max-width: 424px)
   #services
     .service-item-price

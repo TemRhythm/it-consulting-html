@@ -1,0 +1,242 @@
+@font-face {
+	font-family: "icon-font";
+	src: url('icon-font.eot');
+	src: url('icon-font.eot?#iefix') format('eot'),
+		url('icon-font.woff2') format('woff2'),
+		url('icon-font.woff') format('woff'),
+		url('icon-font.ttf') format('truetype'),
+		url('icon-font.svg#icon-font') format('svg');
+}
+
+.icon:before {
+	font-family: "icon-font";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-24-hours:before {
+	content: "\E001";
+}
+
+.icon-arrow-left:before {
+	content: "\E002";
+}
+
+.icon-arrow-right:before {
+	content: "\E003";
+}
+
+.icon-business-building:before {
+	content: "\E004";
+}
+
+.icon-calendar:before {
+	content: "\E005";
+}
+
+.icon-checked-circled:before {
+	content: "\E006";
+}
+
+.icon-close:before {
+	content: "\E007";
+}
+
+.icon-cloud-expand:before {
+	content: "\E008";
+}
+
+.icon-coins:before {
+	content: "\E009";
+}
+
+.icon-computer-user:before {
+	content: "\E00A";
+}
+
+.icon-computer:before {
+	content: "\E00B";
+}
+
+.icon-data-protect:before {
+	content: "\E00C";
+}
+
+.icon-diamond:before {
+	content: "\E00D";
+}
+
+.icon-display:before {
+	content: "\E00E";
+}
+
+.icon-dollar-circled:before {
+	content: "\E00F";
+}
+
+.icon-drop:before {
+	content: "\E010";
+}
+
+.icon-email-doc:before {
+	content: "\E011";
+}
+
+.icon-expand:before {
+	content: "\E012";
+}
+
+.icon-fire:before {
+	content: "\E013";
+}
+
+.icon-flash:before {
+	content: "\E014";
+}
+
+.icon-flick:before {
+	content: "\E015";
+}
+
+.icon-friends:before {
+	content: "\E016";
+}
+
+.icon-handshake:before {
+	content: "\E017";
+}
+
+.icon-heart-2:before {
+	content: "\E018";
+}
+
+.icon-heart:before {
+	content: "\E019";
+}
+
+.icon-help-circled:before {
+	content: "\E01A";
+}
+
+.icon-learning:before {
+	content: "\E01B";
+}
+
+.icon-leaves:before {
+	content: "\E01C";
+}
+
+.icon-letter:before {
+	content: "\E01D";
+}
+
+.icon-licence:before {
+	content: "\E01E";
+}
+
+.icon-light-bulb:before {
+	content: "\E01F";
+}
+
+.icon-like:before {
+	content: "\E020";
+}
+
+.icon-man:before {
+	content: "\E021";
+}
+
+.icon-menu:before {
+	content: "\E022";
+}
+
+.icon-night:before {
+	content: "\E023";
+}
+
+.icon-notebook:before {
+	content: "\E024";
+}
+
+.icon-odnoklassniki-circled:before {
+	content: "\E025";
+}
+
+.icon-personal:before {
+	content: "\E026";
+}
+
+.icon-portfolio:before {
+	content: "\E027";
+}
+
+.icon-printer:before {
+	content: "\E028";
+}
+
+.icon-quotes-left:before {
+	content: "\E029";
+}
+
+.icon-quotes-right:before {
+	content: "\E02A";
+}
+
+.icon-refresh-button:before {
+	content: "\E02B";
+}
+
+.icon-running-rabbit:before {
+	content: "\E02C";
+}
+
+.icon-send-doc:before {
+	content: "\E02D";
+}
+
+.icon-sprout:before {
+	content: "\E02E";
+}
+
+.icon-stopwatch:before {
+	content: "\E02F";
+}
+
+.icon-support:before {
+	content: "\E030";
+}
+
+.icon-team:before {
+	content: "\E031";
+}
+
+.icon-trophy:before {
+	content: "\E032";
+}
+
+.icon-umbrella:before {
+	content: "\E033";
+}
+
+.icon-videcam:before {
+	content: "\E034";
+}
+
+.icon-web-protector:before {
+	content: "\E035";
+}
+
+.icon-wi-fi:before {
+	content: "\E036";
+}
+
+.icon-working:before {
+	content: "\E037";
+}

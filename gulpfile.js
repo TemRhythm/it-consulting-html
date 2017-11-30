@@ -12,6 +12,7 @@ var gulp           = require('gulp'),
 		autoprefixer   = require('gulp-autoprefixer'),
 		ftp            = require('vinyl-ftp'),
 		notify         = require("gulp-notify"),
+		fontIcon 	   = require("gulp-font-icon"),
 		rsync          = require('gulp-rsync');
 
 // Пользовательские скрипты проекта
@@ -127,6 +128,15 @@ gulp.task('rsync', function() {
 		silent: false,
 		compress: true
 	}));
+});
+
+gulp.task("fontIcon", function() {
+    return gulp.src(["app/icons/*.svg"])
+        .pipe(fontIcon({
+            fontName: "icon-font",
+            fontAlias: "icon"
+        }))
+        .pipe(gulp.dest("app/libs/icon-font/"));
 });
 
 gulp.task('removedist', function() { return del.sync('dist'); });

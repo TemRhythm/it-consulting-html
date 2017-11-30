@@ -8,17 +8,26 @@
   border: 1px solid $accent
   border-radius: 8px
   color: white
+  transition: background-color .5s
   &:visited, &:hover
     color: white
+  &:hover
+    background-color: #d92425
   &.transparent-btn
     background-color: transparent
     color: $text-color
+    &:hover
+      background-color: #d92425
+      color: white
   &.white-btn
     background-color: white
+    color: $text-color
     &.transparent-btn
       background-color: transparent
       border-color: white
       color: white
+      &:hover
+        background-color: #d92425
 
 .icon-btn
   background-color: transparent
@@ -45,3 +54,15 @@
 
 .bg-black
   background-color: #000!important
+
+.bg-red
+  background-color: $accent
+  color: white
+  a
+    color: white
+  .alt-form
+    .form-group
+      input:not([type=submit])
+        color: white
+      label
+        color: white

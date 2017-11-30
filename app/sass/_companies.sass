@@ -2,6 +2,7 @@
   padding-bottom: 50px
   text-align: center
   .owl-carousel.companies-carousel
+    position: relative
     .owl-item
       display: table
       .item
@@ -12,5 +13,18 @@
           display: inline-block
           width: auto
           max-width: 80%
+    .owl-nav
+      position: absolute
+      left: 0
+      right: 0
+      top: 45%
+      .owl-next, .owl-prev
+        position: absolute
+        i
+          font-size: 40px
+      .owl-next
+        right: -25px
+      .owl-prev
+        left: -25px
   .become-partner-btn
     margin-top: 50px

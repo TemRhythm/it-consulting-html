@@ -40,7 +40,7 @@
 		</div>
 		<nav id="mainMenu" class="menu menu-open">
 			<div class="menu-inner">
-				<button class="icon-btn menu-close-btn"><i class="icons8 icons8-enlarge"></i></button>
+				<button class="icon-btn menu-close-btn"><i class="icons8 icons8-filled"></i></button>
 				<div class="menu-header">
 					<img src="img/logo.svg" alt="logo" class="logo">
 					<div class="menu-header-slogan">Оптимизируем бизнес-процессы с помощью программ 1С</div>
@@ -93,11 +93,11 @@
 			<div class="section-title">Решения</div>
 			<div class="row">
 				<div class="col-xs-12 col-md-6">
-					<a href="#"class="solution-item" style="background-image: url(img/solutions/solution-1.jpg)">
+					<a href="#" class="solution-item" style="background-image: url(img/solutions/solution-1.jpg)">
 						<div class="solution-item-title">Малому и среднему бизнесу</div>
 						<div class="solution-item-hover-container">
 							<div class="hover-container-text">Для государственных компаний</div>
-							<div class="hover-container-btn"><i class="icons8"></i></div>
+							<div class="hover-container-btn"><i class="icons8 icons8-icon-3"></i></div>
 						</div>
 					</a>
 				</div>
@@ -106,7 +106,7 @@
 						<div class="solution-item-title">Крупному бизнесу</div>
 						<div class="solution-item-hover-container">
 							<div class="hover-container-text">Для государственных компаний</div>
-							<div class="hover-container-btn"><i class="icons8"></i></div>
+							<div class="hover-container-btn"><i class="icons8 icons8-icon-3"></i></div>
 						</div>
 					</a>
 				</div>
@@ -117,7 +117,7 @@
 						<div class="solution-item-title">Бюджетным организациям</div>
 						<div class="solution-item-hover-container">
 							<div class="hover-container-text">Для государственных компаний</div>
-							<div class="hover-container-btn"><i class="icons8"></i></div>
+							<div class="hover-container-btn"><i class="icons8 icons8-icon-3"></i></div>
 						</div>
 					</a>
 				</div>
@@ -126,7 +126,7 @@
 						<div class="solution-item-title">Отраслевые решения</div>
 						<div class="solution-item-hover-container">
 							<div class="hover-container-text">Для государственных компаний</div>
-							<div class="hover-container-btn"><i class="icons8"></i></div>
+							<div class="hover-container-btn"><i class="icons8 icons8-icon-3"></i></div>
 						</div>
 					</a>
 				</div>
@@ -144,16 +144,19 @@
 						<div class="item">
 							<div class="service-item-title">Сопровождение и обновление 1С (ИТС)</div>
 							<div class="service-item-desc">Регулярное сопровождение - это комплексная, оперативная поддержка пользователей программ "1C:Предприятие" и предоставление комфортных условий работы с программами "1С"</div>
+							<a href="#" class="service-item-details">Подробнее <i class="icons8 icons8-icon-3"></i></a>
 							<div class="service-item-price">от 8 031₽</div>
 						</div>
 						<div class="item">
 							<div class="service-item-title">Аудит программ 1С</div>
 							<div class="service-item-desc">Поможет бухгалтерам сократить затраты на поиск и исправление ошибок в учете, руководителям и главным бухгалтерам — получить подтверждение, что учет в программе поставлен правильно иувидеть</div>
+							<a href="#" class="service-item-details">Подробнее <i class="icons8 icons8-icon-3"></i></a>
 							<div class="service-item-price">от 22 999₽</div>
 						</div>
 						<div class="item">
 							<div class="service-item-title">IP-телефония</div>
 							<div class="service-item-desc">Бесплатные звонки внутри сети, связь с 1С и Битрикс 24, единый номер компании и сокращение расходов до 30%</div>
+							<a href="#" class="service-item-details">Подробнее <i class="icons8 icons8-icon-3"></i></a>
 							<div class="service-item-price">от 14 500₽</div>
 						</div>
 					</div>
@@ -164,10 +167,10 @@
 				<div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-5 col-lg-4">
 					<div class="request-form-wrapper">
 						<div class="request-form-title">Оставить заявку</div>
-						<form action="#" id="requestForm">
+						<form action="#" id="requestForm" class="alt-form">
 							<div class="form-group">
 								<input type="text" id="requestFormName" name="name" required>
-								<label for="callbackFormName">Представьтесь, пожалуйста</label>
+								<label for="requestFormName">Представьтесь, пожалуйста</label>
 							</div>
 							<div class="form-group">
 								<input type="email" id="requestFormEmail" name="email" required>
@@ -175,7 +178,7 @@
 							</div>
 							<div class="form-group">
 								<input type="tel" id="requestFormPhone" name="phone" required>
-								<label for="callbackFormPhone">+7 Телефон</label>
+								<label for="requestFormPhone">+7 Телефон</label>
 							</div>
 							<input type="submit" class="btn" value="Попробовать бесплатно">
 							<small>Нажимая на кнопку, вы соглашаетесь <a href="#">с политикой конфиденциальности</a></small>
@@ -234,22 +237,22 @@
 						<div class="advantate-item-desc">Восстанавливаем 100% работоспособность системы учета при сбоях</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-4 hidden">
-					<div class="advantage-item">
+				<div class="col-xs-12 col-sm-6 col-lg-4">
+					<div class="advantage-item" style="display: none">
 						<i class="icons8 icons8-sprout"></i>
 						<div class="advantage-item-title">Помогаем вашему бизнесу процветать</div>
 						<div class="advantate-item-desc">Оказываем помощь в постановке и ведении учета, подготовке любых форм отчетности, устраняем ошибки</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-4 hidden">
-					<div class="advantage-item">
+				<div class="col-xs-12 col-sm-6 col-lg-4">
+					<div class="advantage-item" style="display: none">
 						<i class="icons8 icons8-handshake"></i>
 						<div class="advantage-item-title">Настраиваем систему под вас</div>
 						<div class="advantate-item-desc">Разработаем и настроим приложения 1С, учитывая отраслевые особенности вашего бизнеса</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-4 hidden">
-					<div class="advantage-item">
+				<div class="col-xs-12 col-sm-6 col-lg-4">
+					<div class="advantage-item" style="display: none">
 						<i class="icons8 icons8-running-rabbit"></i>
 						<div class="advantage-item-title">Со скоростью света</div>
 						<div class="advantate-item-desc">Время реакции на задачи от 2-х минут. 90% задач решаем в течение часа с помощью дистанционного подключения</div>
@@ -441,6 +444,29 @@
 			</div>
 		</div>
 	</section>
+	<section id="subscribe" class="bg-red">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-8">
+					<div class="section-title">Подписывайтесь</div>
+					<div class="subscribe-desc">
+						Больше полезных и уникальных статей можно получить. <br>подписавшись на нашу e-mail рассылку.<br>
+						<strong>Никакого спама. Только максимально полезный контент.</strong>
+					</div>
+					<form action="#" id="subscribeForm" class="alt-form">
+						<div class="form-group">
+							<input type="email" id="subscribeFormEmail" name="email" required>
+							<label for="subscribeFormEmail">Электронная почта</label>
+						</div>
+						<input type="submit" class="btn white-btn" value="Подписаться">
+					</form>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<img class="img-responsive mail-convert" src="img/mail-convert.jpg" alt="mail">
+				</div>
+			</div>
+		</div>
+	</section>
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -495,7 +521,7 @@
 			</div>
 		</div>
 	</footer>
-	<botton class="icon-btn scroll-up-btn"></botton>
+	<button class="icon-btn scroll-up-btn"></button>
 	<div id="callbackPopup" class="white-popup mfp-hide">
 		<div class="popup-header">Обратный звонок</div>
 		<form action="#" id="callbackForm">
@@ -516,11 +542,11 @@
 		<form action="#" id="consultRequestForm">
 			<div class="form-group">
 				<input type="text" id="consultRequestName" name="name" required>
-				<label for="callbackFormName">Представьтесь, пожалуйста</label>
+				<label for="consultRequestName">Представьтесь, пожалуйста</label>
 			</div>
 			<div class="form-group">
 				<input type="tel" id="consultRequestPhone" name="phone" required>
-				<label for="callbackFormPhone">+7</label>
+				<label for="consultRequestPhone">+7</label>
 			</div>
 			<input type="submit" class="btn" value="Бесплатная консультация">
 			<small>Нажимая на кнопку «Бесплатная консультация», я даю согласие на <a href="#">обработку персональных данных</a></small>

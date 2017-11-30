@@ -11,6 +11,10 @@ body > header
     position: absolute
     right: 0
     top: 50px
+    color: rgba(255, 255, 255, 0.8)
+    transition: color .3s
+    &:hover
+      color: white
   .section-title
     max-width: 950px
   .section-subtitle
@@ -43,10 +47,12 @@ body > header
       height: $header-height
       a
         color: #ffffff
+        &:hover
+          color: rgba(255,255,255,.7)
       .menu-close-btn
         position: absolute
         top: 11px
-        right: 22px
+        right: 7px
       .logo
         width: 72px
         display: inline-block
