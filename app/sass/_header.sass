@@ -38,6 +38,7 @@ body > header
     &.menu-open
       width: 405px
     .menu-inner
+      z-index: 1
       background-color: $accent
       position: relative
       padding: 11px 28px
@@ -160,6 +161,9 @@ body > header
   color: white
   background-color: $accent
   cursor: pointer
+  i
+    transform: rotate(180deg)
+    margin-top: -5px
 
 @media screen and (max-width: 1199px)
   $header-height: 600px

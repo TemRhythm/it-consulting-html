@@ -1,6 +1,7 @@
 #posts
   padding-bottom: 70px
   .post-category
+    position: relative
     display: block
     color: $text-color
     .post-category-inner
@@ -12,17 +13,18 @@
         background: no-repeat center
         background-size: cover
         transition: transform .5s ease
-      .post-category-name
-        position: absolute
-        width: 103px
-        height: 49px
-        background-color: $accent
-        color: white
-        border-radius: 8px
-        text-align: center
-        padding-top: 11px
-        left: -7px
-        top: -3px
+    .post-category-name
+      position: absolute
+      width: 103px
+      height: 49px
+      background-color: $accent
+      color: white
+      border-radius: 8px
+      text-align: center
+      padding-top: 11px
+      left: -7px
+      top: -3px
+      z-index: 1
     &:hover
       .post-category-inner
         .post-category-image

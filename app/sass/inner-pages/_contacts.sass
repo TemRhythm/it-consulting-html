@@ -1,0 +1,58 @@
+#contactsPage
+  .phone-city
+    font-style: italic
+  .popup-socials
+    margin-top: -6px
+    a
+      font-size: 32px
+  .contacts-blocks
+    > div
+      margin-bottom: 75px
+    span
+      display: block
+    a
+      font-size: 24px
+      line-height: 60px
+  #subscribeForm
+    margin-top: 15px
+    max-width: 291px
+    input[type=submit]
+      border-color: $text-color
+      margin-top: 15px
+  .map
+    position: absolute
+    left: 0
+    right: 0
+    height: 610px
+    + .row
+      height: 610px
+  .request-form-wrapper
+    padding: 40px 36px
+    input:not([type=submit])
+      padding-bottom: 4px
+      margin-top: 5px
+    small
+      font-size: 14px
+      display: block
+      width: 90%
+      margin-top: 10px
+      margin-left: auto
+      margin-right: auto
+
+@media screen and (max-width: 992px)
+  #contactsPage
+    .map
+      z-index: 1
+    .request-form-wrapper
+      margin-top: 610px
+
+@media screen and (max-width: 767px)
+  #contactsPage
+    .contacts-blocks
+      > div
+        margin-bottom: 20px
+        br
+          display: none
+        span
+          br
+            display: block

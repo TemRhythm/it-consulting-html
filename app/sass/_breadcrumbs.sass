@@ -1,0 +1,10 @@
+.breadcrumbs
+  margin-top: 29px
+  margin-bottom: 10px
+  a
+    color: $text-color
+    transition: color .3s
+    &:after
+      content: " — "
+    &:hover
+      color: transparentize($text-color, 0.3)
