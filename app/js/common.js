@@ -15,12 +15,12 @@ $(function() {
 
     $('.drop-down .expand-collapse-btn').click(function () {
         if(!$(this).closest('.drop-down').hasClass('open'))
-            $(this).closest('.menu-items').find('.drop-down.open').find('ul').slideToggle({
+            $(this).closest('.menu-items').find('.drop-down.open').find('.drop-down-content').slideToggle({
                 start: function () {
                     $(this).closest('.menu-items').find('.drop-down.open').toggleClass('open');
                 }
             });
-        $(this).closest('.drop-down').find('ul').slideToggle({
+        $(this).closest('.drop-down').find('.drop-down-content').slideToggle({
             start: function () {
                 $(this).closest('.drop-down').toggleClass('open');
             }
