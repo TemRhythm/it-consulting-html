@@ -27,62 +27,67 @@
 
 </head>
 <body>
-<header class="inner-header">
+<nav id="mainMenu" class="menu inner-page-menu">
+    <div class="menu-inner">
+    <button class="icon-btn menu-close-btn"><i class="icons8 icons8-filled"></i></button>
+    <div class="menu-header">
+        <img src="img/logo.svg" alt="logo" class="logo">
+        <div class="menu-header-slogan">Оптимизируем бизнес-процессы с помощью программ 1С</div>
+        <div class="phone-selection-items">
+            <a id="yaroslavlPhone" href="#" class="active">+7 (4852) 59-33-33</a>
+            <a id="moscowPhone" href="#">+7 (495) 975-93-57</a>
+        </div>
+        <div class="phone-selection-links">
+            <a href="#yaroslavlPhone" class="active">Ярославль</a>
+            <a href="#moscowPhone">Москва</a>
+        </div>
+    </div>
+    <div class="menu-scroll-part">
+        <ul class="menu-items">
+            <li class="drop-down"><a href="/"><i class="icons8 icons8-brain"></i> Услуги</a>
+                <button class="icon-btn expand-collapse-btn"><i class="icons8-expand-arrow"></i></button>
+                <div class="drop-down-content" style="display: none">
+                    <ul>
+                        <li><a href="#">Сопровождение и обновление 1С (ИТС)</a></li>
+                        <li><a href="#">Аудит программ 1С</a></li>
+                        <li><a href="#">IP телефония</a></li>
+                        <li><a href="#">Интернет 1С</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drop-down"><a href="#"><i class="icons8 icons8-idea"></i> Решения</a>
+                <button class="icon-btn expand-collapse-btn"><i class="icons8-expand-arrow"></i></button>
+                <div class="drop-down-content" style="display: none">
+                    <ul>
+                        <li><a href="#">Малому и среднему бизнесу</a></li>
+                        <li><a href="#">Крупному бизнесу</a></li>
+                        <li><a href="#">Бюджетным организациям</a></li>
+                        <li><a href="#">Отраслевые решения</a></li>
+                        <li><a href="#">Сервисы</a></li>
+                        <li><a href="#">Продукты других вендоров</a></li>
+                        <li><a href="#">Торговое оборудование</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="icons8 icons8-business"></i> Кейсы</a></li>
+            <li><a href="#"><i class="icons8 icons8-ruble"></i> Цены и акции</a></li>
+            <li><a href="#"><i class="icons8 icons8-people"></i> О нас</a></li>
+            <li><a href="contacts.html"><i class="icons8 icons8-message"></i> Контакты</a></li>
+        </ul>
+        <button class="btn white-btn transparent-btn callback-btn">Обратный звонок</button>
+        <a href="#" class="menu-mail-link">Напишите нам</a>
+        <div class="menu-address">г. Ярославль, ул. Советская, 69, к.2, 1 этаж</div>
+        <a href="#" class="menu-privacy-link">Политика конфиденциальности</a>
+    </div>
+</div>
+</nav>
+<header class="page-header inner-header">
     <div class="container">
         <div class="pull-left">
             <a class="logo" href="index.html"><img src="img/logo.svg" alt="IT Конасалтинг"></a>
         </div>
         <div class="pull-right"><button class="icon-btn header-menu-btn"><i class="icons8 icons8-menu"></i></button></div>
     </div>
-    <nav id="mainMenu" class="menu">
-        <div class="menu-inner">
-            <button class="icon-btn menu-close-btn"><i class="icons8 icons8-filled"></i></button>
-            <div class="menu-header">
-                <img src="img/logo.svg" alt="logo" class="logo">
-                <div class="menu-header-slogan">Оптимизируем бизнес-процессы с помощью программ 1С</div>
-                <div class="phone-selection-items">
-                    <a id="yaroslavlPhone" href="#" class="active">+7 (4852) 59-33-33</a>
-                    <a id="moscowPhone" href="#">+7 (495) 975-93-57</a>
-                </div>
-                <div class="phone-selection-links">
-                    <a href="#yaroslavlPhone" class="active">Ярославль</a>
-                    <a href="#moscowPhone">Москва</a>
-                </div>
-            </div>
-            <div class="menu-scroll-part">
-                <ul class="menu-items">
-                    <li class="drop-down"><a href="/"><i class="icons8 icons8-brain"></i> Услуги</a>
-                        <button class="icon-btn expand-collapse-btn"><i class="icons8-expand-arrow"></i></button>
-                        <ul style="display: none">
-                            <li><a href="#">Сопровождение и обновление 1С (ИТС)</a></li>
-                            <li><a href="#">Аудит программ 1С</a></li>
-                            <li><a href="#">IP телефония</a></li>
-                        </ul>
-                    </li>
-                    <li class="drop-down"><a href="#"><i class="icons8 icons8-idea"></i> Решения</a>
-                        <button class="icon-btn expand-collapse-btn"><i class="icons8-expand-arrow"></i></button>
-                        <ul style="display: none">
-                            <li><a href="#">Малому бизнесу</a></li>
-                            <li><a href="#">Крупному бизнесу</a></li>
-                            <li><a href="#">Бюджетным организациям</a></li>
-                            <li><a href="#">Отраслевые решения</a></li>
-                            <li><a href="#">Сервисы</a></li>
-                            <li><a href="#">Продукты других вендоров</a></li>
-                            <li><a href="#">Торговое оборудование</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><i class="icons8 icons8-business"></i> Кейсы</a></li>
-                    <li><a href="#"><i class="icons8 icons8-ruble"></i> Цены и акции</a></li>
-                    <li><a href="#"><i class="icons8 icons8-people"></i> О нас</a></li>
-                    <li><a href="#"><i class="icons8 icons8-message"></i> Контакты</a></li>
-                </ul>
-                <button class="btn white-btn transparent-btn callback-btn">Обратный звонок</button>
-                <a href="#" class="menu-mail-link">Напишите нам</a>
-                <div class="menu-address">г. Ярославль, ул. Советская, 69, к.2, 1 этаж</div>
-                <a href="#" class="menu-privacy-link">Политика конфиденциальности</a>
-            </div>
-        </div>
-    </nav>
 </header>
 <main id="contactsPage">
     <div class="container">
@@ -170,7 +175,7 @@
         </div>
     </div>
 </main>
-<footer>
+<footer class="page-footer">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-9 col-lg-10">

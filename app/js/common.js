@@ -1,16 +1,30 @@
 $(function() {
 
 	// Custom JS
+    if($(window).width() > 450)
+        $('.menu').addClass('menu-open');
     $('.header-menu-btn, .menu-close-btn').click(function () {
-        $('#mainMenu').toggleClass('menu-open');
+        var $mainMenuEl = $('#mainMenu');
+        if ($mainMenuEl.hasClass('menu-open')){
+            $('.header-menu-btn').fadeIn();
+            $('body, html').removeClass('noscroll');
+        }
+        else {
+            $('.header-menu-btn').fadeOut();
+            $('body, html').addClass('noscroll');
+        }
+        $mainMenuEl.toggleClass('menu-open');
     });
 
     $('.phone-selection-links a').click(function (e) {
         e.preventDefault();
         $('.phone-selection-links a').removeClass('active');
         $(this).addClass('active');
-        $('.phone-selection-items a').removeClass('active');
-        $($(this).attr('href')).addClass('active');
+        var $newActiveItemEl = $($(this).attr('href'));
+        $('.phone-selection-items a.active').fadeOut(200,function () {
+            $(this).removeClass('active');
+            $newActiveItemEl.fadeIn(200).addClass('active');
+        });
     });
 
     $('.drop-down .expand-collapse-btn').click(function () {
@@ -32,6 +46,8 @@ $(function() {
             src: '#callbackPopup',
             type: 'inline'
         },
+        removalDelay: 300,
+        mainClass: 'mfp-fade',
         fixedContentPos: false
     });
 
@@ -40,6 +56,8 @@ $(function() {
             src: '#consultRequestPopup',
             type: 'inline'
         },
+        removalDelay: 300,
+        mainClass: 'mfp-fade',
         fixedContentPos: false
     });
 
@@ -103,6 +121,7 @@ $(function() {
     $('.services-carousel').owlCarousel({
         items: 1,
         autoplay: true,
+        stopOnHover: false,
         loop: true,
         dots: true,
         dotsContainer: '.mobile-dots',
@@ -119,19 +138,19 @@ $(function() {
     $('.companies-carousel').owlCarousel({
         loop: true,
         autoplay: true,
+        stopOnHover: false,
         items: 1,
+        nav: true,
         navText: ['<i class="icons8 icons8-icon-4"></i>', '<i class="icons8 icons8-icon-3"></i>'],
         responsive: {
             450: {
                 items: 2
             },
             768: {
-                items: 3,
-                nav: true
+                items: 3
             },
             992: {
-                items: 4,
-                nav: true
+                items: 4
             }
         }
     });

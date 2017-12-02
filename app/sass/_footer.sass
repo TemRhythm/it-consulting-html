@@ -1,4 +1,4 @@
-body > footer
+.page-footer
   background-color: #282828
   padding-top: 62px
   padding-bottom: 16px
@@ -35,30 +35,35 @@ body > footer
         font-style: italic
 
 @media screen and (max-width: 1199px)
-  body > footer
+  .page-footer
     .footer-menu
       margin-bottom: 25px
       a
         margin-right: 40px
 
 @media screen and (max-width: 991px)
-  body > footer
+  .page-footer
     .footer-menu
       a
         margin-right: 17px
 
 @media screen and (max-width: 767px)
-  body > footer
+  .page-footer
     .footer-contacts
       margin-top: 20px
       text-align: left
       .footer-contacts-item
         display: inline-block
         margin-right: 25px
+    .policy-link
+      margin-top: 36px
+      display: inline-block
+    .footer-address
+      margin-bottom: 20px
 
 
 @media screen and (max-width: 500px)
-  body > footer
+  .page-footer
     text-align: center
     padding-top: 40px
     .footer-menu
@@ -70,4 +75,6 @@ body > footer
         text-align: center
     .footer-rights
       display: block
-      margin-top: 20px
+      margin-top: 10px
+    .footer-contacts
+      text-align: center
