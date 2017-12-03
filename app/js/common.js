@@ -1,8 +1,10 @@
 $(function() {
 
 	// Custom JS
-    if($(window).width() > 450)
+    if($(window).width() > 450) {
+        $('.header-menu-btn').hide();
         $('.menu').addClass('menu-open');
+    }
     $('.header-menu-btn, .menu-close-btn').click(function () {
         var $mainMenuEl = $('#mainMenu');
         if ($mainMenuEl.hasClass('menu-open')){
