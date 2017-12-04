@@ -33,6 +33,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/jquery-validation/dist/jquery.validate.min.js',
 		'app/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js',
 		'app/libs/owl.carousel/dist/owl.carousel.min.js',
+		'app/libs/owl.carousel2.thumbs/dist/owl.carousel2.thumbs.min.js',
 		'app/libs/outline.js',
 		'app/js/common.min.js', // Всегда в конце
 		])

@@ -1,0 +1,21 @@
+.accordion
+  .accordion-item
+    .accordion-header
+      position: relative
+      padding-top: 40px
+      padding-bottom: 28px
+      font-size: 36px
+      line-height: 23.6px
+      .accordion-btn
+        position: absolute
+        padding: 25px
+        right: 10px
+        top: 13px
+        cursor: pointer
+        transition: transform .5s
+    .accordion-body
+      padding-bottom: 26px
+    &.accordion-item-open
+      .accordion-header
+        .accordion-btn
+          transform: rotate(180deg)

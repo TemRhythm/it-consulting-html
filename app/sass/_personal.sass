@@ -1,0 +1,55 @@
+.about-personal
+  text-align: center
+  position: relative
+  display: block
+  color: $text-color
+  margin-top: 25px
+  .about-personal-hover-content
+    opacity: 0
+    transition: opacity .5s
+    position: absolute
+    padding-top: 55px
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    color: white
+    background-color: rgba(25, 24, 24, 0.8)
+    .hover-content-item
+      margin-bottom: 15px
+      i, .hover-content-item-number
+        font-size: 23px
+      i
+        margin-right: 5px
+      .hover-content-item-name
+        font-weight: 300
+  &:hover, &:focus
+    text-decoration: none
+  &:hover
+    .about-personal-hover-content
+      opacity: 1
+  .personal-name, .personal-post
+    margin-left: 10%
+    text-align: left
+  .personal-name
+    margin-top: 11px
+    line-height: 26px
+    font-size: 22px
+    max-width: 150px
+  .personal-post
+    font-weight: 300
+  .image-wrapper
+    height: 276px
+    position: relative
+    .about-personal-inner
+      position: absolute
+      bottom: 0
+      background-color: $accent
+      width: 80%
+      left: 10%
+      height: 238px
+      border-radius: 8px
+    .image-bottom-wrapper
+      position: absolute
+      width: 100%
+      bottom: 0

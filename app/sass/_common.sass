@@ -51,10 +51,8 @@
     color: $text-color
     margin-top: 30px
     margin-bottom: 15px
-
-
 .bg-grey
-  background-color: #f8f7f7
+  background-color: $gray
 
 .bg-black
   background-color: #000!important
@@ -119,6 +117,32 @@
 .content-wrapper
   height: auto
   min-height: 100%
+
+.owl-thumbs
+  display: flex
+  justify-content: space-between
+  .owl-thumb-item
+    display: block
+    width: 100%
+    background-color: transparent
+    border: none
+    padding: 0
+    img
+      width: 100%
+
+.owl-carousel
+  .owl-dots
+    text-align: center
+    .owl-dot
+      display: inline-block
+      margin: 20px 5px
+      border: 1px solid $text-color
+      width: 15px
+      height: 15px
+      border-radius: 50%
+      &.active
+        background-color: $text-color
+
 
 
 

@@ -43,6 +43,20 @@ $(function() {
         });
     });
 
+    $('.accordion-btn').click(function () {
+        if(!$(this).closest('.accordion-item').hasClass('accordion-item-open'))
+            $(this).closest('.accordion').find('.accordion-item-open .accordion-body').slideToggle({
+                start: function () {
+                    $(this).closest('.accordion').find('.accordion-item-open').toggleClass('accordion-item-open');
+                }
+            });
+        $(this).closest('.accordion-item').find('.accordion-body').slideToggle({
+            start: function () {
+                $(this).closest('.accordion-item').toggleClass('accordion-item-open');
+            }
+        });
+    });
+
     $('.callback-btn').magnificPopup({
         items: {
             src: '#callbackPopup',
@@ -200,5 +214,17 @@ $(function() {
             $scrollUpBtnEl.hide();
         }
     });
+
+    $('.about-carousel').owlCarousel({
+        items: 1,
+        thumbs: true,
+        thumbsPrerendered: true,
+        thumbContainerClass: 'owl-thumbs'
+    });
+
+    $('.principles-carousel').owlCarousel({
+        items: 1,
+        dots: true
+    })
 
 });

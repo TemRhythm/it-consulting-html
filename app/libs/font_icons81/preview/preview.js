@@ -118,7 +118,7 @@ $(document).ready(function() {
 
   function onFontFamilyChanged(e) {
     var val = e.target.value.trim();
-    $textarea.css("font-family", "font_icons81, " + val);
+    $textarea.css("font-family", "font_icons8, " + val);
   }
 
   function onCheatcodeFocus(e) {
