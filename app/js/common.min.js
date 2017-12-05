@@ -225,6 +225,13 @@ $(function() {
     $('.principles-carousel').owlCarousel({
         items: 1,
         dots: true
+    });
+
+    $('.history-carousel').owlCarousel({
+        items: 1,
+        dots: false,
+        thumbsPrerendered: true,
+        thumbContainerClass: 'history-years'
     })
 
 });

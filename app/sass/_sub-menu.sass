@@ -1,0 +1,44 @@
+.sub-menu
+  font-size: 24px
+  margin-bottom: 68px
+  a, span
+    display: inline-block
+    margin-right: 48px
+    &:last-child
+      margin-right: 0
+  span, a:hover
+    &:after
+      content: " "
+      display: block
+      height: 2px
+      width: 70%
+      margin: 3px auto
+      background-color: $accent
+  a
+    &:after
+      content: " "
+      opacity: 0
+      transition: opacity .5s
+    &:hover:after
+      opacity: 1
+
+
+@media screen and (max-width: 1199px)
+  .sub-menu
+    a
+      font-size: 22px
+      margin-right: 23px
+
+@media screen and (max-width: 991px)
+  .sub-menu
+    a
+      font-size: 20px
+      margin-right: 24px
+      &:nth-child(5)
+        margin-right: 0
+
+@media screen and (max-width: 767px)
+  .sub-menu
+    margin-bottom: 40px
+    a:nth-child(5)
+      margin-right: 24px

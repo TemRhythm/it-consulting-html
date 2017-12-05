@@ -1,0 +1,45 @@
+#storeEquipment
+  .store-equipment-item
+    display: block
+    padding: 10px
+    position: relative
+    height: 700px
+    margin-bottom: 100px
+    transition: box-shadow .3s
+    &:hover
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.07)
+      color: $text-color
+    .store-equipment-title
+      margin-top: 40px
+      margin-bottom: 25px
+      margin-right: 20px
+      min-height: 60px
+      font-size: 24px
+      line-height: 30px
+      font-weight: 700
+    .store-equipment-desc
+      font-size: 18px
+      line-height: 24px
+      font-weight: 300
+      letter-spacing: 0.27px
+    .store-equipment-order-btn-wrapper
+      position: absolute
+      bottom: 60px
+      left: 0
+      right: 0
+      text-align: center
+#storeEquipmentArticle
+  padding-bottom: 72px
+
+@media screen and (max-width: 767px)
+  #storeEquipment
+    .store-equipment-item
+      height: auto
+      .store-equipment-title
+        margin-top: 20px
+        min-height: auto
+      .store-equipment-order-btn-wrapper
+        position: relative
+        margin-top: 25px
+        bottom: auto
+

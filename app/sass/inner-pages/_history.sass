@@ -1,0 +1,43 @@
+.history-info
+  font-size: 22px
+  font-weight: 300
+  letter-spacing: 0.33px
+.history-carousel-item
+  font-size: 18px
+  font-weight: 300
+  line-height: 30px
+  letter-spacing: 0.27px
+.history-carousel
+  padding-bottom: 50px
+.history-years
+  margin-top: 70px
+  margin-bottom: 30px
+  position: relative
+  display: flex
+  justify-content: space-between
+  &:before
+    content: " "
+    display: block
+    position: absolute
+    width: 100%
+    height: 8px
+    top: 25px
+    background-color: $accent
+  .history-years-item
+    position: relative
+    display: block
+    width: auto
+    background-color: transparent
+    border: none
+    &:before
+      content: " "
+      margin: 15px auto
+      display: block
+      width: 25px
+      height: 25px
+      border: 1px solid #be0b0c
+      border-radius: 50%
+      background-color: white
+    &.active
+      &:before
+        background-color: $accent
