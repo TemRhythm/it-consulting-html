@@ -1,0 +1,38 @@
+#awards
+  text-align: center
+  padding-bottom: 60px
+  .award
+    text-align: left
+    padding: 36px 0
+    .award-title
+      font-size: 24px
+      line-height: 23.6px
+    .award-years
+      margin-top: 24px
+      display: flex
+      flex-wrap: wrap
+      justify-content: flex-start
+      .award-year
+        margin: 15px 25px
+        font-size: 16px
+        i
+          display: block
+          margin-bottom: 7px
+          color: $accent
+          font-size: 32px
+    .award-desc
+      margin-top: 40px
+      font-size: 16px
+      font-weight: 300
+      line-height: 24px
+  button
+    margin-top: 33px
+
+@media screen and (max-width: 767px)
+  #awards
+    .award
+      text-align: center
+      img
+        margin: 20px auto
+      .award-years
+        justify-content: center

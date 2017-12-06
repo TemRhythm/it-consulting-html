@@ -1,0 +1,29 @@
+#news
+  text-align: center
+  padding-bottom: 70px
+.news-item
+  text-align: left
+  display: block
+  margin-bottom: 56px
+  .news-item-image
+    display: block
+    height: 365px
+    background: transparent no-repeat center
+    background-size: cover
+    position: relative
+    &:before
+      content: " "
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background-color: transparent
+      transition: background-color .3s
+  .news-item-title
+    margin-top: 15px
+    font-size: 20px
+  &:hover
+    .news-item-image
+      &:before
+        background-color: rgba(0, 0, 0, 0.5)

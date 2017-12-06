@@ -232,6 +232,23 @@ $(function() {
         dots: false,
         thumbsPrerendered: true,
         thumbContainerClass: 'history-years'
-    })
+    });
+
+    $('.recommendations-carousel').owlCarousel({
+        items: 1,
+        stagePadding: 60,
+        margin: 31,
+        responsive: {
+            768: {
+                items: 3
+            },
+            992: {
+                items: 4
+            },
+            1200: {
+                items: 6
+            }
+        }
+    });
 
 });

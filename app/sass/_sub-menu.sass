@@ -25,13 +25,13 @@
 
 @media screen and (max-width: 1199px)
   .sub-menu
-    a
+    a, span
       font-size: 22px
       margin-right: 23px
 
 @media screen and (max-width: 991px)
   .sub-menu
-    a
+    a, span
       font-size: 20px
       margin-right: 24px
       &:nth-child(5)
@@ -40,5 +40,5 @@
 @media screen and (max-width: 767px)
   .sub-menu
     margin-bottom: 40px
-    a:nth-child(5)
+    *:nth-child(5)
       margin-right: 24px
