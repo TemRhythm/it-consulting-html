@@ -32,6 +32,9 @@
       &:hover
         background-color: #d92425
 
+section
+  margin-bottom: 50px
+
 .icon-btn
   background-color: transparent
   border: none
@@ -57,6 +60,7 @@
 
 .bg-black
   background-color: #000!important
+  color: white
 
 .bg-red
   background-color: $accent
@@ -65,9 +69,11 @@
     color: white
   .alt-form
     .form-group
-      input:not([type=submit])
+      input:not([type=submit]), label
         color: white
-      label
+    small
+      color: white
+      a
         color: white
 
 .bg-white-with-shadow
@@ -156,6 +162,40 @@
 @media screen and (max-width: 450px)
   .section-title
     font-size: 30px
+
+ul.red-bullet-style
+  list-style: none
+  font-size: 18px
+  line-height: 23.6px
+  padding-left: 0
+  li
+    padding-left: 31px
+    background: url(../../img/list-style-image.svg) no-repeat 0 4px
+    margin-top: 26px
+
+ul.list-dash-style
+  padding-left: 0
+  list-style: none
+  li
+    &:before
+      content: "—"
+      padding-right: 5px
+
+ul.list-filled-bullet-style
+  text-align: left
+  list-style: none
+  padding-left: 0
+  li
+    margin-bottom: 10px
+    &:before
+      content: "•"
+      padding-right: 10px
+      font-size: 35px
+      line-height: 10px
+      color: $accent
+      vertical-align: middle
+
+
 
 
 

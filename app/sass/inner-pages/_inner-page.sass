@@ -27,11 +27,19 @@
   .section-title
     text-align: center
     font-size: 36px
+    margin-top: 0
   form
     .btn
       width: 291px
     small
+      margin-top: 20px
       display: block
+
+@media screen and (min-width: 992px)
+  .inner-page-form-section
+    .col-md-4.col-md-offset-0
+      input[type=submit]
+        margin-top: 0
 
 .inner-page-form-wrapper
   border-radius: 8px
@@ -62,3 +70,49 @@ article
       height: auto
       .menu-scroll-part
         height: auto
+
+#innerPageSubHeader
+  height: 645px
+  position: relative
+  color: white
+  margin-top: 20px
+  padding-top: 162px
+  h1
+    margin-bottom: 29px
+    font-size: 48px
+    line-height: 55px
+  .inner-page-sub-header-sub-title
+    font-size: 30px
+    font-weight: 300
+    line-height: 36px
+  .inner-page-sub-header-btn-wrapper
+    position: absolute
+    min-height: 110px
+    left: 0
+    right: 0
+    bottom: 100px
+    text-align: center
+    small
+      display: block
+      margin-top: 10px
+      font-size: 14px
+      font-style: italic
+
+
+@media screen and (max-width: 992px)
+  #innerPageSubHeader
+    padding-top: 100px
+
+@media screen and (max-width: 767px)
+  #innerPageSubHeader
+    height: auto
+    padding-top: 70px
+    padding-bottom: 70px
+    h1
+      font-size: 36px
+    .inner-page-sub-header-sub-title
+      font-size: 24px
+    .inner-page-sub-header-btn-wrapper
+      position: relative
+      bottom: 0
+      margin-top: 50px

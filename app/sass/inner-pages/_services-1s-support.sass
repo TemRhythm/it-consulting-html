@@ -1,0 +1,75 @@
+#itsTypes
+  .tabs
+    margin-bottom: 10px
+    .tab
+      display: inline-block
+      margin-right: 96px
+      &:hover, &.active
+        border-bottom: 2px dotted $accent
+  .tab-pan
+    padding-top: 50px
+    #planChooseForm
+      text-align: center
+      margin-top: 50px
+      input
+        vertical-align: middle
+        margin: 0
+      .select2
+        margin-right: 50px
+        font-weight: 700
+#discount
+  .discount-block
+    padding: 25px 64px
+    background: white
+    color: $text-color
+    margin-bottom: 50px
+    .request-form-wrapper
+      margin-top: 0
+      padding-top: 0
+    .discount-period
+      font-size: 30px
+      font-weight: 700
+    .discount-old-price
+      margin-top: 45px
+      margin-bottom: 10px
+      font-size: 35px
+      text-decoration: line-through
+      color: transparentize($text-color, 0.5)
+    .discount-new-price
+      font-size: 48px
+    small
+      font-size: 16px
+
+.freebies-item
+  position: relative
+  height: 160px
+  margin-bottom: 29px
+  padding: 40px 0 40px 17px
+  font-size: 20px
+  line-height: 24px
+  background-color: $accent
+  color: white
+  i
+    position: absolute
+    right: 21px
+    top: 8px
+    font-size: 38px
+  .freebies-item-link-wrapper
+    opacity: 0
+    transition: opacity .3s
+    position: absolute
+    bottom: 21px
+    left: 0
+    right: 0
+    text-align: center
+    .freebies-item-link
+      font-size: 16px
+      padding: 3px 7px
+      text-decoration: none
+      border-bottom: 2px dotted white
+      color: white
+  &:hover
+    .freebies-item-link-wrapper
+      opacity: 1
+
+
