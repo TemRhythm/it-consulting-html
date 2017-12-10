@@ -41,6 +41,19 @@
       input[type=submit]
         margin-top: 0
 
+@media screen and (max-width: 991px)
+  .inner-page-form-section
+    .bg-white-with-shadow
+      box-shadow: none
+      background-color: transparent
+
+@media screen and (min-width: 992px) and (max-width: 1199px)
+  .inner-page-form-section
+    .alt-form
+      label
+        font-size: 14px
+        top: 33px
+
 .inner-page-form-wrapper
   border-radius: 8px
   padding-top: 52px
@@ -104,6 +117,8 @@ article
     padding-top: 100px
 
 @media screen and (max-width: 767px)
+  h1
+    font-size: 36px
   #innerPageSubHeader
     height: auto
     padding-top: 70px
@@ -116,3 +131,14 @@ article
       position: relative
       bottom: 0
       margin-top: 50px
+
+#achievements
+  .achievements-item
+    min-height: 150px
+    .achievements-item-title
+      font-size: 30px
+      font-weight: 700
+      i
+        color: $accent
+        font-size: 25px
+        margin-right: 5px

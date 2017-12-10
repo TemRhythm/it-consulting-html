@@ -68,3 +68,29 @@ $services-bgc: #191818
     .service-item-price
       font-size: 60px
 
+.services-plans-tabs
+  .tabs
+    margin-bottom: 10px
+    .tab
+      display: inline-block
+      margin-right: 96px
+      &:hover, &.active
+        border-bottom: 2px dotted $accent
+  .tab-pan
+    padding-top: 50px
+
+@media screen and (max-width: 767px)
+  .services-plans-tabs
+    .tabs
+      display: flex
+      justify-content: space-between
+      .tab
+        margin-right: 15px
+        margin-left: 15px
+@media screen and (max-width: 450px)
+  .services-plans-tabs
+    .tabs
+      .tab
+        margin-right: 0
+        margin-left: 0
+

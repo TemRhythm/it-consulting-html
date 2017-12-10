@@ -1,13 +1,5 @@
 #itsTypes
-  .tabs
-    margin-bottom: 10px
-    .tab
-      display: inline-block
-      margin-right: 96px
-      &:hover, &.active
-        border-bottom: 2px dotted $accent
   .tab-pan
-    padding-top: 50px
     #planChooseForm
       text-align: center
       margin-top: 50px
@@ -17,6 +9,17 @@
       .select2
         margin-right: 50px
         font-weight: 700
+
+@media screen and (max-width: 767px)
+  #itsTypes
+    .tab-pan
+      #planChooseForm
+        input, .select2
+          display: block
+          margin: 10px auto
+        .select2
+          width: 291px!important
+
 #discount
   .discount-block
     padding: 25px 64px
@@ -38,7 +41,20 @@
     .discount-new-price
       font-size: 48px
     small
+      display: block
       font-size: 16px
+      padding-bottom: 50px
+
+@media screen and (max-width: 992px)
+  #discount
+    .discount-block
+      padding-top: 50px
+      .request-form-wrapper
+        padding-left: 0
+        padding-right: 0
+        padding-top: 20px
+        border-radius: 0
+        border-top: 2px solid $accent
 
 .freebies-item
   position: relative

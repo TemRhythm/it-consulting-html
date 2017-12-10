@@ -94,15 +94,17 @@
         right: 10px
         top: 13px
         cursor: pointer
-        transition: transform .5s
         i
+          transition: transform .5s
           font-size: 30px
       &.open
         > a
           font-weight: 700
         border: 1px solid white
         button
-          transform: rotate(180deg)
+          i
+            transform-origin: center
+            transform: rotate(180deg)
     .menu-mail-link, .menu-privacy-link
       display: inline-block
       margin: 20px 0 15px
@@ -125,7 +127,16 @@
         background-color: #191818
         border-radius: 2px
 
-@media screen and (max-width: 450px)
+@media screen and (max-width: 1199px)
+  .menu
+    height: 600px
+    .menu-inner
+      height: 600px
+      .menu-scroll-part
+        height: 600px
+
+
+@media screen and (max-width: 767px)
   .noscroll
     overflow: hidden
   .menu

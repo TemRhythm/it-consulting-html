@@ -1,61 +1,6 @@
 #aboutPage
   .section-title
     font-size: 30px
-#achievements
-  .achievements-item
-    min-height: 150px
-    .achievements-item-title
-      font-size: 30px
-      font-weight: 700
-      i
-        color: $accent
-        font-size: 25px
-        margin-right: 5px
-  .about-article
-    font-size: 18px
-    position: relative
-    padding-top: 40px
-    .container
-      position: relative
-    .author
-      position: absolute
-      right: 15px
-      text-align: right
-      font-size: 22px
-      margin-bottom: 10px
-      .post
-        display: block
-        font-size: 16px
-    .big-quotes-content
-      &:before, &:after
-        font-family: 'font_icons8', sans-serif
-        font-size: 28px
-        margin-top: 27px
-        line-height: 20px
-      &:before
-        content: '\f12d'
-        display: inline-block
-      &:after
-        content: '\f117'
-        margin-top: 60px
-        float: right
-    img
-      margin-right: 40px
-    p
-      margin-bottom: 30px
-    blockquote
-      margin-left: 107px
-      margin-right: 107px
-      border-left: 1px solid $accent
-      padding: 27px 36px
-      font-size: 36px
-      font-weight: 300
-    footer
-      font-size: 36px
-      text-align: center
-      button
-        margin-top: 35px
-        margin-bottom: 28px
   #whyWe
     text-align: center
     padding-bottom: 59px
@@ -89,7 +34,7 @@
   #values
     .value-item
       margin-bottom: 36px
-      .icons8
+      i.icon
         display: block
         margin-bottom: 15px
         color: $accent
@@ -125,8 +70,61 @@
         margin-top: 15px
         font-size: 22px
 
+  .about-article
+    font-size: 18px
+    position: relative
+    padding-top: 40px
+    .container
+      position: relative
+    .author
+      position: absolute
+      right: 15px
+      text-align: right
+      font-size: 22px
+      margin-bottom: 10px
+      .post
+        display: block
+        font-size: 16px
+    .big-quotes-content
+      &:before, &:after
+        font-family: 'icon-font', sans-serif
+        font-size: 28px
+        margin-top: 27px
+        line-height: 20px
+      &:before
+        content: '\E050'
+        display: inline-block
+      &:after
+        content: '\E051'
+        margin-top: 60px
+        float: right
+    img
+      margin-right: 40px
+    p
+      margin-bottom: 30px
+    blockquote
+      margin-left: 107px
+      margin-right: 107px
+      border-left: 1px solid $accent
+      padding: 27px 36px
+      font-size: 36px
+      font-weight: 300
+    footer
+      font-size: 36px
+      text-align: center
+      button
+        margin-top: 35px
+        margin-bottom: 28px
+
 #askUs
   padding-bottom: 70px
   text-align: center
   .section-title
     text-align: center
+
+@media screen and (max-width: 450px)
+  #aboutPage
+    .about-article
+      blockquote
+        margin-left: 0
+        margin-right: 0

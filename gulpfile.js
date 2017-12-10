@@ -12,7 +12,9 @@ var gulp           = require('gulp'),
 		autoprefixer   = require('gulp-autoprefixer'),
 		ftp            = require('vinyl-ftp'),
 		notify         = require("gulp-notify"),
-		fontIcon 	   = require("gulp-font-icon"),
+		gulp 		   = require('gulp'),
+		iconfont	   = require('gulp-iconfont'),
+    	iconfontCss = require('gulp-iconfont-css'),
 		rsync          = require('gulp-rsync');
 
 // Пользовательские скрипты проекта
@@ -133,13 +135,22 @@ gulp.task('rsync', function() {
 	}));
 });
 
-gulp.task("fontIcon", function() {
-    return gulp.src(["app/icons/*.svg"])
-        .pipe(fontIcon({
-            fontName: "icon-font",
-            fontAlias: "icon"
+var fontName = 'icon-font';
+gulp.task('icon-font', function(){
+    gulp.src(['app/icons/*.svg'])
+        .pipe(iconfontCss({
+            fontName: fontName,
+            path: 'app/libs/icon-font/css-template/_icons',
+            targetPath: '../css/icon-font.css',
+            fontPath: '../fonts/'
         }))
-        .pipe(gulp.dest("app/libs/icon-font/"));
+        .pipe(iconfont({
+            fontName: fontName,
+            formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'],
+            normalize: true,
+            fontHeight: 50
+        }))
+        .pipe(gulp.dest('app/libs/icon-font/dist/fonts/'));
 });
 
 gulp.task('removedist', function() { return del.sync('dist'); });
