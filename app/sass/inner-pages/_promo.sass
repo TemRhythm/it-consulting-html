@@ -1,0 +1,113 @@
+#pricesCarousel
+  margin-top: 20px
+  position: relative
+  padding-bottom: 0
+  .prices-carousel-item
+    padding-top: 80px
+    height: 645px
+    color: white
+    position: relative
+    .prices-carousel-title
+      font-size: 48px
+      max-width: 785px
+      font-weight: 700
+    .prices-carousel-sub-title
+      font-weight: 300
+      font-size: 30px
+      .prices-carousel-price
+        font-size: 48px
+    .prices-carousel-btn-wrapper
+      position: absolute
+      text-align: center
+      bottom: 140px
+      left: 0
+      right: 0
+  .owl-dots
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 49px
+    .owl-dot
+      border-color: white
+      &.active
+        background-color: white
+  .owl-nav
+    position: absolute
+    left: 15px
+    right: 15px
+    top: 45%
+    color: white
+    font-size: 34px
+    .owl-next, .owl-prev
+      position: absolute
+    .owl-next
+      right: 0
+
+.promo-prices-item
+  border-radius: 8px
+  padding: 30px
+  margin-bottom: 30px
+  text-align: center
+  position: relative
+  height: 400px
+  .promo-prices-title
+    font-size: 30px
+    line-height: 23.6px
+    margin-bottom: 30px
+  .promo-prices-item-row
+    text-align: left
+    font-size: 18px
+    margin: 15px 0
+    .row
+      >div:last-child
+        text-align: right
+  .promo-prices-btn-wrapper
+    position: absolute
+    text-align: center
+    left: 0
+    right: 0
+    bottom: 30px
+    .btn
+      margin-top: 22px
+
+.one-s-services-price
+  border-bottom: 1px solid #c0c0c0
+  padding-bottom: 38px
+  padding-top: 42px
+  font-size: 18px
+  .one-s-services-price-value
+    text-align: center
+    margin-top: 12px
+    font-size: 30px
+    font-weight: 700
+  .row
+    >div:last-child
+      text-align: right
+  .btn
+    padding-top: 20px
+    padding-bottom: 20px
+    width: 250px
+  &:last-child
+    border-bottom: 0
+
+@media screen and (max-width: 992px)
+  .promo-prices-item
+    height: auto
+    .promo-prices-item-row
+      text-align: center
+      margin: 30px
+      .red-bullet
+        display: none
+      .row
+        >div:last-child
+          text-align: center
+    .promo-prices-btn-wrapper
+      position: relative
+      bottom: 0
+
+  .one-s-services-price
+    text-align: center
+    .row
+      >div:last-child
+        margin-top: 20px
+        text-align: center

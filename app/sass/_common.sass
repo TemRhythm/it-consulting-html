@@ -195,6 +195,31 @@ ul.list-filled-bullet-style
       color: $accent
       vertical-align: middle
 
+ul.checked-list
+  list-style: none
+  padding-left: 0
+  li
+    margin-bottom: 35px
+    &:before
+      font-family: "icon-font", sans-serif
+      display: inline-block
+      content: "\E00B"
+      font-size: 23px
+      vertical-align: top
+      padding-right: 10px
+      margin-top: -2px
+      color: $accent
+
+.red-bullet
+  &:before
+    content: "•"
+    font-size: 40px
+    line-height: 13px
+    display: inline-block
+    vertical-align: middle
+    padding-right: 13px
+    color: $accent
+
 
 
 

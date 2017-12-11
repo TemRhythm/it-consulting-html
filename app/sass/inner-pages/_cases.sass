@@ -26,3 +26,39 @@
   .case-results-list
     list-style: none
     counter-reset: li
+    li
+      counter-increment: li
+      &:before
+        content: counter(li)"."
+        color: $accent
+        display: inline-block
+        width: 1em
+        margin-left: -1.5em
+        font-size: 30px
+        font-weight: 700
+
+#casesFreeConsultationSection
+  .section-title
+    font-size: 30px
+    line-height: 48px
+    margin-bottom: 20px
+  .section-sub-title
+    font-size: 20px
+    line-height: 28px
+    font-weight: 300
+  #casesFreeConsultationForm
+    margin-top: 30px
+    .btn
+      margin-top: 10px
+
+#caseReview
+  .section-title
+    margin-bottom: 48px
+  .case-review-author
+    font-size: 24px
+    margin-left: 35px
+    vertical-align: top
+  .case-review-author-post
+    margin-top: 25px
+    font-size: 14px
+    font-weight: 300
