@@ -1,0 +1,473 @@
+@font-face {
+    font-family: "icon-font";
+    src: url('../fonts/icon-font.eot');
+    src: url('../fonts/icon-font.eot?#iefix') format('eot'),
+    url('../fonts/icon-font.woff2') format('woff2'),
+    url('../fonts/icon-font.woff') format('woff'),
+    url('../fonts/icon-font.ttf') format('truetype'),
+    url('../fonts/icon-font.svg#icon-font') format('svg');
+}
+
+.icon, .icon:before {
+    display: inline-block;
+    font-family: "icon-font";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+
+.icon-24-hours:before {
+  content: "\E001";
+}
+
+.icon-academic-plan:before {
+  content: "\E002";
+}
+
+.icon-arrow-left:before {
+  content: "\E003";
+}
+
+.icon-arrow-right:before {
+  content: "\E004";
+}
+
+.icon-back:before {
+  content: "\E005";
+}
+
+.icon-brain:before {
+  content: "\E006";
+}
+
+.icon-business-building:before {
+  content: "\E007";
+}
+
+.icon-business:before {
+  content: "\E008";
+}
+
+.icon-calendar-31:before {
+  content: "\E009";
+}
+
+.icon-calendar:before {
+  content: "\E00A";
+}
+
+.icon-checked-circled:before {
+  content: "\E00B";
+}
+
+.icon-close:before {
+  content: "\E00C";
+}
+
+.icon-cloud-expand:before {
+  content: "\E00D";
+}
+
+.icon-coin:before {
+  content: "\E00E";
+}
+
+.icon-coins:before {
+  content: "\E00F";
+}
+
+.icon-computer-user:before {
+  content: "\E010";
+}
+
+.icon-computer:before {
+  content: "\E011";
+}
+
+.icon-cooperation:before {
+  content: "\E012";
+}
+
+.icon-data-protect:before {
+  content: "\E013";
+}
+
+.icon-data-protection:before {
+  content: "\E014";
+}
+
+.icon-department:before {
+  content: "\E015";
+}
+
+.icon-diamond:before {
+  content: "\E016";
+}
+
+.icon-display:before {
+  content: "\E017";
+}
+
+.icon-dollar-circled:before {
+  content: "\E018";
+}
+
+.icon-dollar:before {
+  content: "\E019";
+}
+
+.icon-drop:before {
+  content: "\E01A";
+}
+
+.icon-easy:before {
+  content: "\E01B";
+}
+
+.icon-edit-graphical-report:before {
+  content: "\E01C";
+}
+
+.icon-email-doc:before {
+  content: "\E01D";
+}
+
+.icon-enlarge:before {
+  content: "\E01E";
+}
+
+.icon-expand-arrow:before {
+  content: "\E01F";
+}
+
+.icon-expand:before {
+  content: "\E020";
+}
+
+.icon-facebook-circled:before {
+  content: "\E021";
+}
+
+.icon-filled:before {
+  content: "\E022";
+}
+
+.icon-fire:before {
+  content: "\E023";
+}
+
+.icon-flash:before {
+  content: "\E024";
+}
+
+.icon-forward:before {
+  content: "\E025";
+}
+
+.icon-friends:before {
+  content: "\E026";
+}
+
+.icon-get-quote:before {
+  content: "\E027";
+}
+
+.icon-handshake:before {
+  content: "\E028";
+}
+
+.icon-heart-2:before {
+  content: "\E029";
+}
+
+.icon-heart:before {
+  content: "\E02A";
+}
+
+.icon-help-circled:before {
+  content: "\E02B";
+}
+
+.icon-idea:before {
+  content: "\E02C";
+}
+
+.icon-in-progress:before {
+  content: "\E02D";
+}
+
+.icon-instagram:before {
+  content: "\E02E";
+}
+
+.icon-last-24-hours:before {
+  content: "\E02F";
+}
+
+.icon-laurel-wreath:before {
+  content: "\E030";
+}
+
+.icon-learning:before {
+  content: "\E031";
+}
+
+.icon-leaves:before {
+  content: "\E032";
+}
+
+.icon-letter:before {
+  content: "\E033";
+}
+
+.icon-licence:before {
+  content: "\E034";
+}
+
+.icon-light-bulb:before {
+  content: "\E035";
+}
+
+.icon-like:before {
+  content: "\E036";
+}
+
+.icon-male-user:before {
+  content: "\E037";
+}
+
+.icon-man-and-woman:before {
+  content: "\E038";
+}
+
+.icon-man:before {
+  content: "\E039";
+}
+
+.icon-management-commercial-development:before {
+  content: "\E03A";
+}
+
+.icon-medal:before {
+  content: "\E03B";
+}
+
+.icon-menu:before {
+  content: "\E03C";
+}
+
+.icon-message:before {
+  content: "\E03D";
+}
+
+.icon-mind-work:before {
+  content: "\E03E";
+}
+
+.icon-money:before {
+  content: "\E03F";
+}
+
+.icon-monitor:before {
+  content: "\E040";
+}
+
+.icon-more-than:before {
+  content: "\E041";
+}
+
+.icon-mountain:before {
+  content: "\E042";
+}
+
+.icon-next:before {
+  content: "\E043";
+}
+
+.icon-night:before {
+  content: "\E044";
+}
+
+.icon-notebook:before {
+  content: "\E045";
+}
+
+.icon-odnoklassniki-circled:before {
+  content: "\E046";
+}
+
+.icon-ok:before {
+  content: "\E047";
+}
+
+.icon-on-computer:before {
+  content: "\E048";
+}
+
+.icon-people:before {
+  content: "\E049";
+}
+
+.icon-personal:before {
+  content: "\E04A";
+}
+
+.icon-play:before {
+  content: "\E04B";
+}
+
+.icon-portfolio:before {
+  content: "\E04C";
+}
+
+.icon-position-in-world-map:before {
+  content: "\E04D";
+}
+
+.icon-print:before {
+  content: "\E04E";
+}
+
+.icon-protect-approved:before {
+  content: "\E04F";
+}
+
+.icon-quotes-left:before {
+  content: "\E050";
+}
+
+.icon-quotes-right:before {
+  content: "\E051";
+}
+
+.icon-refresh-button:before {
+  content: "\E052";
+}
+
+.icon-remote-working:before {
+  content: "\E053";
+}
+
+.icon-report-system:before {
+  content: "\E054";
+}
+
+.icon-return:before {
+  content: "\E055";
+}
+
+.icon-rise-up:before {
+  content: "\E056";
+}
+
+.icon-ruble:before {
+  content: "\E057";
+}
+
+.icon-running-rabbit:before {
+  content: "\E058";
+}
+
+.icon-send-doc:before {
+  content: "\E059";
+}
+
+.icon-sertifficate:before {
+  content: "\E05A";
+}
+
+.icon-skyscrapers:before {
+  content: "\E05B";
+}
+
+.icon-smile:before {
+  content: "\E05C";
+}
+
+.icon-sprout:before {
+  content: "\E05D";
+}
+
+.icon-star:before {
+  content: "\E05E";
+}
+
+.icon-stopwatch:before {
+  content: "\E05F";
+}
+
+.icon-study:before {
+  content: "\E060";
+}
+
+.icon-success:before {
+  content: "\E061";
+}
+
+.icon-support:before {
+  content: "\E062";
+}
+
+.icon-sync:before {
+  content: "\E063";
+}
+
+.icon-target:before {
+  content: "\E064";
+}
+
+.icon-team:before {
+  content: "\E065";
+}
+
+.icon-time:before {
+  content: "\E066";
+}
+
+.icon-top-1:before {
+  content: "\E067";
+}
+
+.icon-trophy:before {
+  content: "\E068";
+}
+
+.icon-umbrella:before {
+  content: "\E069";
+}
+
+.icon-up:before {
+  content: "\E06A";
+}
+
+.icon-videcam:before {
+  content: "\E06B";
+}
+
+.icon-vk-circled:before {
+  content: "\E06C";
+}
+
+.icon-water:before {
+  content: "\E06D";
+}
+
+.icon-web-protect:before {
+  content: "\E06E";
+}
+
+.icon-wi-fi:before {
+  content: "\E06F";
+}
+
+.icon-working:before {
+  content: "\E070";
+}
