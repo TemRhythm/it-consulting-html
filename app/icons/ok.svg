@@ -1,4 +1,10 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="100px" height="100px">
-    <path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 25 3 C 12.86158 3 3 12.86158 3 25 C 3 37.13842 12.86158 47 25 47 C 37.13842 47 47 37.13842 47 25 C 47 12.86158 37.13842 3 25 3 z M 25 5 C 36.05754 5 45 13.94246 45 25 C 45 36.05754 36.05754 45 25 45 C 13.94246 45 5 36.05754 5 25 C 5 13.94246 13.94246 5 25 5 z M 34.988281 14.988281 A 1.0001 1.0001 0 0 0 34.171875 15.439453 L 23.970703 30.476562 L 16.679688 23.710938 A 1.0001 1.0001 0 1 0 15.320312 25.177734 L 24.316406 33.525391 L 35.828125 16.560547 A 1.0001 1.0001 0 0 0 34.988281 14.988281 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<path d="M50,6C25.723,6,6,25.723,6,50s19.723,44,44,44s44-19.723,44-44S74.277,6,50,6z M50,90c-22.115,0-40-17.885-40-40
+	s17.885-40,40-40c22.115,0,40,17.885,40,40S72.115,90,50,90z M71.656,33.121l-23.023,33.93L30.641,50.355
+	c-0.019-0.017-0.037-0.034-0.055-0.051c-0.796-0.766-0.82-2.032-0.054-2.828s2.032-0.82,2.828-0.054l14.582,13.531l20.402-30.074
+	c0.362-0.552,0.973-0.889,1.633-0.902c0.423-0.008,0.837,0.118,1.184,0.36C72.067,30.968,72.288,32.215,71.656,33.121z"/>
 </svg>

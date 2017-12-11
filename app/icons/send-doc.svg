@@ -1,4 +1,10 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="100px" height="100px">
-    <path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 29.984375 2.9863281 A 1.0001 1.0001 0 0 0 29.839844 3 L 8 3 L 8 47 L 42 47 L 42 40.384766 L 40 41.96875 L 40 45 L 36.169922 45 L 36 45.134766 L 36 45 L 10 45 L 10 5 L 29 5 L 29 16 L 40 16 L 40 21.03125 L 42 22.615234 L 42 14.585938 L 30.791016 3.3769531 A 1.0001 1.0001 0 0 0 30.603516 3.1894531 L 30.414062 3 L 30.154297 3 A 1.0001 1.0001 0 0 0 29.984375 2.9863281 z M 31 6.4140625 L 38.585938 14 L 31 14 L 31 6.4140625 z M 16 21 L 16 23 L 34 23 L 34 21 L 16 21 z M 38 22 L 38 28 L 31 28 L 31 35 L 38 35 L 38 41 L 50 31.5 L 38 22 z M 40 26.134766 L 46.777344 31.5 L 40 36.865234 L 40 35 L 40 33 L 38 33 L 33 33 L 33 30 L 38 30 L 40 30 L 40 28 L 40 26.134766 z M 16 27 L 16 29 L 29 29 L 29 27 L 16 27 z M 16 33 L 16 35 L 29 35 L 29 33 L 16 33 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<path d="M58,58H32v-4h26V58z M76,82V70H62V56h14V44l24,19L76,82z M76,66h4v4v3.73L93.555,63L80,52.27V56v4h-4H66v6H76z M68,42H32v4
+	h36V42z M32,70h26v-4H32V70z M80,83.938l4-3.168V94H16V6h43.68c0.096-0.016,0.192-0.025,0.289-0.027
+	c0.114-0.001,0.228,0.009,0.34,0.027h0.52l0.379,0.379c0.141,0.108,0.267,0.234,0.375,0.375L84,29.172V45.23l-4-3.168V32H58V10H20
+	v80h52v0.27L72.34,90H80V83.938z M62,28h15.172L62,12.828V28z"/>
 </svg>

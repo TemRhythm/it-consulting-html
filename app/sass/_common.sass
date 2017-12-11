@@ -1,4 +1,5 @@
 .btn
+  display: inline-block
   width: 291px
   padding-top: 25px
   padding-bottom: 25px
@@ -219,6 +220,41 @@ ul.checked-list
     vertical-align: middle
     padding-right: 13px
     color: $accent
+
+.cards
+  padding-bottom: 100px
+  text-align: center
+  .section-title
+    margin-bottom: 10px
+  .cards-item
+    min-height: 250px
+    text-align: left
+    margin-top: 50px
+    i
+      font-size: 30px
+      color: $accent
+    .cards-item-title
+      font-size: 22px
+      margin-bottom: 19px
+      margin-top: 18px
+      min-height: 72px
+    .cards-item-desc
+      font-size: 17px
+      color: #030303
+      font-weight: 300
+  .show-more-btn
+    margin-top: 80px
+
+@media screen and (max-width: 767px)
+  .cards
+    .cards-item
+      text-align: center
+      max-width: 500px
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 40px
+      i
+        font-size: 50px
 
 
 
