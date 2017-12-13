@@ -7,11 +7,20 @@
     display: block
     text-align: left
     color: white
-    height: 328px
-    background: no-repeat center
-    background-size: cover
     border-radius: 7px
     margin-bottom: 22px
+    height: 328px
+    overflow: hidden
+    .solution-item-image
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background: no-repeat center
+      background-size: cover
+      border-radius: 7px
+      transition: transform .4s ease
     .solution-item-title
       position: relative
       z-index: 1
@@ -71,6 +80,8 @@
         opacity: 1
       &:before
         opacity: 1
+      .solution-item-image
+        transform: scale(1.1)
   .consult-request-btn
     margin-top: 40px
 

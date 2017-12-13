@@ -235,6 +235,7 @@ $(function() {
     $('.about-carousel').owlCarousel({
         items: 1,
         thumbs: true,
+        dots: false,
         thumbsPrerendered: true,
         thumbContainerClass: 'owl-thumbs'
     });

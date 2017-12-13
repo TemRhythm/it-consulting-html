@@ -5,12 +5,16 @@
   text-align: left
   display: block
   margin-bottom: 56px
-  .news-item-image
-    display: block
+  .news-item-image-wrapper
     height: 365px
+    overflow: hidden
+  .news-item-image
+    height: 365px
+    display: block
     background: transparent no-repeat center
     background-size: cover
     position: relative
+    transition: transform .5s ease
     &:before
       content: " "
       position: absolute
@@ -19,11 +23,12 @@
       left: 0
       right: 0
       background-color: transparent
-      transition: background-color .3s
+      transition: background-color .5s ease
   .news-item-title
     margin-top: 15px
     font-size: 20px
   &:hover
     .news-item-image
+      transform: scale(1.1)
       &:before
         background-color: rgba(0, 0, 0, 0.5)
